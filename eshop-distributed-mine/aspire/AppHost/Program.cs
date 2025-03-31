@@ -4,13 +4,25 @@ var builder = DistributedApplication.CreateBuilder(args);
 var postgres = builder
         .AddPostgres("postgres")
         .WithPgAdmin()
-        //.WithDataVolume()
+        .WithDataVolume()
         .WithLifetime(ContainerLifetime.Persistent);
 
 var catalogDb = postgres.AddDatabase("catalogdb");
 
+var cache = builder
+    .AddRedis("cache")
+    .WithRedisInsight()
+    .WithDataVolume()
+    .WithLifetime(ContainerLifetime.Persistent);
+
+// Projects
+
 builder.AddProject<Projects.Catalog>("catalog")
     .WithReference(catalogDb)
     .WaitFor(catalogDb);
+
+builder.AddProject<Projects.Basket>("basket")
+    .WithReference(cache)
+    .WaitFor(cache);
 
 builder.Build().Run();

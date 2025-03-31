@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspire", "aspire", "{2EAA2C55-FAC6-48CD-9AB1-EB7D0C34F5FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{773D8D89-FE0D-4F25-8477-179F2823AF2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{BAD1E0D7-469A-4BF5-BF57-D7AC118CCE01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "aspire\AppHost\AppHost.csproj", "{5523204A-A173-4479-8DE4-0E83590DCB39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "aspire\ServiceDefaults\ServiceDefaults.csproj", "{97A3A0A0-74C0-4DA6-BCCB-B42E1E579430}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5523204A-A173-4479-8DE4-0E83590DCB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5523204A-A173-4479-8DE4-0E83590DCB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5523204A-A173-4479-8DE4-0E83590DCB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5523204A-A173-4479-8DE4-0E83590DCB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A3A0A0-74C0-4DA6-BCCB-B42E1E579430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A3A0A0-74C0-4DA6-BCCB-B42E1E579430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A3A0A0-74C0-4DA6-BCCB-B42E1E579430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A3A0A0-74C0-4DA6-BCCB-B42E1E579430}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5523204A-A173-4479-8DE4-0E83590DCB39} = {2EAA2C55-FAC6-48CD-9AB1-EB7D0C34F5FA}
+		{97A3A0A0-74C0-4DA6-BCCB-B42E1E579430} = {2EAA2C55-FAC6-48CD-9AB1-EB7D0C34F5FA}
+	EndGlobalSection
+EndGlobal

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog", "services\Catalog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket", "services\Basket\Basket.csproj", "{F2A02A95-06D3-43F4-B9B7-D509941EE99C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "..\..\..\UDEMY ASP.NET Aspire and GenAI Develop Distributed Architectures\UDEMY-GenAI-Aspire-Microservice\frontend\WebApp\WebApp.csproj", "{45E15F54-A39D-47C4-95AA-C29947F338F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F2A02A95-06D3-43F4-B9B7-D509941EE99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2A02A95-06D3-43F4-B9B7-D509941EE99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2A02A95-06D3-43F4-B9B7-D509941EE99C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E15F54-A39D-47C4-95AA-C29947F338F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E15F54-A39D-47C4-95AA-C29947F338F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E15F54-A39D-47C4-95AA-C29947F338F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E15F54-A39D-47C4-95AA-C29947F338F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,5 +54,6 @@ Global
 		{4D3D0E35-09BF-4C74-AEB9-E6227FD2EF29} = {2EAA2C55-FAC6-48CD-9AB1-EB7D0C34F5FA}
 		{E12D7F75-EF92-4679-9C14-ACFC7AB09AD6} = {773D8D89-FE0D-4F25-8477-179F2823AF2D}
 		{F2A02A95-06D3-43F4-B9B7-D509941EE99C} = {773D8D89-FE0D-4F25-8477-179F2823AF2D}
+		{45E15F54-A39D-47C4-95AA-C29947F338F7} = {BAD1E0D7-469A-4BF5-BF57-D7AC118CCE01}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-@Catalog_HostAddress = https://localhost:7234/products
+@Catalog_HostAddress = https://localhost:7078/products
 
 GET {{Catalog_HostAddress}}/
 Accept: application/json

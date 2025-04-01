@@ -1,3 +1,5 @@
+using Projects;
+
 var builder = DistributedApplication.CreateBuilder(args);
 
 // Backing Services
@@ -34,15 +36,22 @@ var catalog = builder.AddProject<Projects.Catalog>("catalog")
     .WaitFor(catalogDb)
     .WaitFor(rabbitmq);
 
-builder.AddProject<Projects.Basket>("basket")
+var basket = builder.AddProject<Projects.Basket>("basket")
     .WithReference(cache)
     .WithReference(catalog)
     .WithReference(rabbitmq)
     .WithReference(keycloak)
     .WaitFor(cache)
     .WaitFor(rabbitmq) 
-    .WaitFor(keycloak); 
+    .WaitFor(keycloak);
 
-builder.AddProject<Projects.WebApp>("webapp");
+var webapp = builder.AddProject<Projects.BlazorApp>("blazorapp")
+    .WithExternalHttpEndpoints()
+    .WithReference(cache)
+    .WithReference(catalog)
+    .WithReference(basket)
+    .WaitFor(catalog)
+    .WaitFor(basket);
+
 
 builder.Build().Run();

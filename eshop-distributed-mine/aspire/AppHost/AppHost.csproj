@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\UDEMY ASP.NET Aspire and GenAI Develop Distributed Architectures\UDEMY-GenAI-Aspire-Microservice\frontend\WebApp\WebApp.csproj" />
+    <ProjectReference Include="..\..\frontend\BlazorApp\BlazorApp.csproj" />
     <ProjectReference Include="..\..\services\Basket\Basket.csproj" />
     <ProjectReference Include="..\..\services\Catalog\Catalog.csproj" />
   </ItemGroup>
